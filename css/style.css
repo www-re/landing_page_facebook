@@ -724,6 +724,90 @@ a:visited {
   color: #111111;
 }
 
+/* form */
+.position-class.form {
+  padding: 81px 0 101px 0;
+  background: #abe1ff;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-form {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: auto;
+  padding: 46.2px 61px 50.86px;
+  background: #ffffff;
+  box-shadow: 0px 4px 35px #8cbfdc;
+  border-radius: 17px;
+  margin-right: 130px;
+}
+.left-form input {
+  height: 60px;
+  background: #f0f0f0;
+  border-radius: 72px;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  color: #858585;
+}
+.left-form input:not(:last-child) {
+  margin-bottom: 8px;
+}
+.left-form input::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #858585;
+}
+.left-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 448px; */
+  height: 59.89px;
+  background: #34e490;
+  border-radius: 72px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 17px;
+}
+.right-form {
+  max-width: 100%;
+}
+
+.right-form > h1 {
+  max-width: 470px;
+  margin-bottom: 4.5px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #2c5aae;
+}
+.right-form > h2 {
+  max-width: 525.11px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+  color: #111111;
+  margin-bottom: 26.85px;
+}
+.right-form > p {
+  max-width: 443.22px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #111111;
+}
+
 @media screen and (max-width: 1850px) {
   .top img {
     right: 30px;
@@ -1071,6 +1155,29 @@ a:visited {
   .right-how ul {
     background-image: none;
   }
+
+  /* form */
+  .left-form {
+    margin-right: 80px;
+    width: 470px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .left-form input {
+    width: 100%;
+  }
+  .right-form {
+    width: 470px;
+  }
+  .right-form h1 {
+    font-size: 44px;
+  }
+  .right-form h2 {
+    font-size: 34px;
+  }
+  .right-form p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1000px) {
   /* how */
@@ -1098,6 +1205,26 @@ a:visited {
   }
   .right-how ul li .descr {
     font-size: 16px;
+  }
+
+  /* form */
+  .position-class.form {
+    padding: 61px 0 81px 0;
+    background: #abe1ff;
+  }
+  .left-form {
+    margin-right: 40px;
+    width: 450px;
+  }
+
+  .right-form h1 {
+    font-size: 40px;
+  }
+  .right-form h2 {
+    font-size: 30px;
+  }
+  .right-form p {
+    width: 100%;
   }
 }
 
@@ -1243,6 +1370,32 @@ a:visited {
   }
   .right-who p {
     font-size: 14px;
+  }
+
+  /* form */
+  .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .left-form {
+    margin-right: 0;
+    max-width: 400px;
+    padding: 50.2px 23.52px 63.86px;
+  }
+
+  .right-form h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 6.66px;
+  }
+  .right-form h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .right-form p {
+    display: none;
   }
 }
 
@@ -1409,6 +1562,7 @@ a:visited {
   .want-content span {
     color: #26e288;
   }
+
   /* who */
   .who-content p {
     padding-right: 15px;
@@ -1714,6 +1868,16 @@ a:visited {
   .who img {
     margin-right: 66.22px;
   }
+
+  /* form */
+  .position-class.form {
+    padding: 50px 23px 63px 23px;
+    background: #abe1ff;
+  }
+  .left-form {
+    margin-right: 0;
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 375px) {
   .top img:nth-child(3) {
@@ -1773,5 +1937,17 @@ a:visited {
   }
   .right-how ul li .descr {
     font-size: 18px;
+  }
+
+  /* form */
+  .left-form {
+    margin-right: 0;
+  }
+
+  .left-form input {
+    max-width: 100%;
+  }
+  .left-form button {
+    max-width: 100%;
   }
 }
