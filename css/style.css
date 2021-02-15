@@ -579,8 +579,6 @@ input:-webkit-autofill:active {
   background-image: url("../img/who-rect.png"), url("../img/who-circle.png");
   background-repeat: no-repeat;
   background-position: right 532px top 0, right 394px top 108px;
-
-  /* position: relative; */
 }
 .who img {
   display: block;
@@ -614,6 +612,116 @@ input:-webkit-autofill:active {
 }
 .right-who p {
   margin-bottom: 20px;
+}
+
+/* how */
+.how-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.position-class.how {
+  padding-top: 208.42px;
+  padding-bottom: 165.1px;
+  background: #ecf8ff;
+  background-image: url("../img/how-rect.png");
+  background-position: left 279px top 123px;
+  background-repeat: no-repeat;
+}
+.left-how {
+  max-width: 411px;
+  margin-right: 193px;
+}
+.left-how h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 47px;
+}
+.left-how p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #111111;
+  margin-bottom: 44.45px;
+}
+.left-how span {
+  color: #2c5aae;
+}
+.left-how a,
+a:visited {
+  display: block;
+  max-width: 353.36px;
+  height: 59.89px;
+  background: #34e490;
+  border-radius: 72px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.right-how ul {
+  background-image: url("../img/how-line.png"), url("../img/how-line.png");
+  background-position: left 30px top 60px, left 30px bottom 115px;
+  background-repeat: no-repeat;
+}
+.right-how ul li {
+  position: relative;
+  list-style: none;
+  padding-left: 106px;
+  max-width: 549px;
+}
+
+.right-how ul li:not(:last-child) {
+  margin-bottom: 79.42px;
+}
+
+.right-how .number {
+  display: block;
+  width: 60px;
+  height: 60px;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.right-how .number {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.right-how .number img {
+  display: block;
+  position: absolute;
+  right: 9px;
+  bottom: -11px;
+}
+.right-how ul li:first-child img {
+  right: 14px;
+}
+
+.right-how .title {
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 140%;
+  color: #111111;
+}
+.right-how .descr {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #111111;
 }
 
 @media screen and (max-width: 1850px) {
@@ -944,6 +1052,51 @@ input:-webkit-autofill:active {
   }
 
   .right-who p {
+    font-size: 16px;
+  }
+
+  /* how */
+  .position-class.how {
+    background-image: none;
+  }
+  .left-how {
+    margin-right: 53px;
+  }
+  .left-how p {
+    font-size: 16px;
+  }
+  .right-how ul li .descr {
+    font-size: 16px;
+  }
+  .right-how ul {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* how */
+  .right-how ul li .number {
+    display: none;
+  }
+  .right-how ul li {
+    padding-left: 46px;
+    max-width: 343px;
+  }
+
+  .left-how {
+    margin-right: 23px;
+  }
+
+  .left-how {
+    max-width: 351px;
+  }
+  .left-how h1 {
+    font-size: 43px;
+    line-height: 45px;
+  }
+  .left-how p {
+    font-size: 16px;
+  }
+  .right-how ul li .descr {
     font-size: 16px;
   }
 }
@@ -1317,6 +1470,69 @@ input:-webkit-autofill:active {
   .who img {
     margin-right: 66.22px;
   }
+
+  /* how */
+  .position-class.how {
+    padding-top: 103px;
+    padding-bottom: 83px;
+  }
+  .how-content {
+    flex-direction: column;
+  }
+  .left-how {
+    margin-right: 0;
+  }
+  .left-how h1 {
+    font-size: 35px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 20.52px;
+  }
+  .left-how a {
+    display: none;
+  }
+  .left-how p {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .right-how {
+    text-align: center;
+  }
+  .right-how ul li {
+    padding-left: 0;
+  }
+  .right-how ul li:not(:last-child) {
+    margin-bottom: 42.32px;
+  }
+  .right-how ul li .title {
+    font-size: 23px;
+    line-height: 140%;
+  }
+  .right-how ul li .descr {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .right-how ul li .number {
+    width: 83.31px;
+    height: 83.31px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .right-how .number img {
+    width: 27.69px;
+    height: auto;
+    right: 9px;
+    bottom: -11px;
+  }
+  .right-how ul li:first-child img {
+    width: 20.69px;
+    right: 14px;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -1544,5 +1760,18 @@ input:-webkit-autofill:active {
   }
   .who img {
     margin-right: 33.22px;
+  }
+
+  /* how */
+
+  .left-how p {
+    font-size: 18px;
+  }
+  .right-how ul li .title {
+    font-size: 23px;
+    margin-bottom: 6px;
+  }
+  .right-how ul li .descr {
+    font-size: 18px;
   }
 }
