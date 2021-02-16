@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
@@ -21,10 +24,11 @@ body {
   height: 50px;
   border-radius: 50%;
   /* background-color: #85A0DE; */
-  transition: 0.5s;
+  transition: 300ms ease;
 }
 .burger-menu_button:hover .burger-menu_lines {
   filter: brightness(1);
+  transition: 300ms ease;
 }
 .burger-menu_lines,
 .burger-menu_lines::before,
@@ -90,11 +94,13 @@ body {
   font-size: 18px;
   line-height: 290%;
   color: #ffffff;
+  transition: 300ms ease;
 }
 .burger-menu_link:hover {
   color: #111111;
   font-weight: 700;
   background: #fff;
+  transition: 300ms ease;
 }
 .burger-menu_overlay {
   display: none;
@@ -151,10 +157,12 @@ header {
   color: #111111;
   text-decoration: none;
   margin-left: 60px;
+  transition: 300ms ease;
 }
 .nav-bar a:hover {
-  /* text-shadow: 0 0 1px #000, 0 0 1px #000; */
-  font-weight: 600;
+  text-shadow: 0 0 0 #000, 0 0 0 #000;
+  /* font-weight: 600; */
+  transition: 300ms ease;
 }
 
 /* top */
@@ -220,10 +228,12 @@ header {
   background: #fff;
   padding-left: 10px;
   /* background: rgba(255, 255, 255, 0.5); */
+  transition: 300ms ease;
 }
 .top-form:hover {
   border: 1px solid #44b9fc;
   box-shadow: inset 0px 0px 10px #44b9fc;
+  transition: 300ms ease;
 }
 .top-form input {
   font-style: italic;
@@ -238,6 +248,7 @@ header {
   caret-color: #b1b1b1;
   /* background: rgba(255, 255, 255, 0.05); */
   -webkit-text-fill-color: #b1b1b1;
+  transition: 300ms ease;
 }
 .top-form input::placeholder {
   color: #b1b1b1;
@@ -273,9 +284,11 @@ input:-webkit-autofill:active {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 300ms ease;
 }
 .top-form button:hover {
   background: #7cfec0;
+  transition: 300ms ease;
 }
 
 /* about */
@@ -565,9 +578,11 @@ input:-webkit-autofill:active {
   text-transform: uppercase;
   text-align: center;
   padding-top: 21px;
+  transition: 300ms ease;
 }
 .want-content a:hover {
   background: #7cfec0;
+  transition: 300ms ease;
 }
 
 /* who */
@@ -668,10 +683,12 @@ a:visited {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: 300ms ease;
 }
 
 .left-how a:hover {
   background: #7cfec0;
+  transition: 300ms ease;
 }
 
 .right-how ul {
@@ -761,11 +778,13 @@ a:visited {
   outline: none;
   color: #858585;
   border: 1px solid #f0f0f0;
+  transition: 300ms ease;
 }
 .left-form input:hover,
 .left-form input:focus {
   border: 1px solid #44b9fc;
   box-shadow: inset 1px 0px 14px rgba(38, 190, 255, 0.4);
+  transition: 300ms ease;
 }
 .left-form input:not(:last-child) {
   margin-bottom: 8px;
@@ -793,9 +812,11 @@ a:visited {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 17px;
+  transition: 300ms ease;
 }
 .left-form button:hover {
   background: #7cfec0;
+  transition: 300ms ease;
 }
 .right-form {
   max-width: 100%;
@@ -852,9 +873,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 300ms ease;
 }
 .left-footer ul li:hover {
   background: #34e490;
+  transition: 300ms ease;
 }
 .left-footer ul li:not(:last-child) {
   margin-right: 22.84px;
@@ -1051,10 +1074,12 @@ footer {
     background: #fff;
     padding-left: 7px;
     /* background: rgba(255, 255, 255, 0.5); */
+    transition: 300ms ease;
   }
   .top-form:hover {
     border: 1px solid #44b9fc;
     box-shadow: inset 0px 0px 7px #44b9fc;
+    transition: 300ms ease;
   }
   .top-form input {
     font-style: italic;
@@ -1354,10 +1379,12 @@ footer {
     max-width: 300px;
     height: 40px;
     padding-left: 5px;
+    transition: 300ms ease;
   }
   .top-form:hover {
     border: 1px solid #44b9fc;
     box-shadow: inset 0px 0px 5px #44b9fc;
+    transition: 300ms ease;
   }
   .top-form input {
     font-style: italic;
@@ -1880,6 +1907,7 @@ footer {
     caret-color: #b1b1b1;
     -webkit-text-fill-color: #b1b1b1;
     background: rgba(255, 255, 255, 0.5);
+    transition: 300ms ease;
   }
 
   .top-form_320 input::placeholder {
@@ -1891,10 +1919,12 @@ footer {
   }
   .top-form_320 input:focus {
     color: #b1b1b1;
+    transition: 300ms ease;
   }
   .top-form_320 input:hover {
     border: 1px solid #44b9fc;
     box-shadow: inset 0px 0px 7px #44b9fc;
+    transition: 300ms ease;
   }
   .top-form_320 button {
     width: 256.63px;
@@ -1912,9 +1942,11 @@ footer {
     outline: none;
     border: none;
     cursor: pointer;
+    transition: 300ms ease;
   }
   .top-form_320 button:hover {
     background: #7cfec0;
+    transition: 300ms ease;
   }
   /* about */
   .about {
