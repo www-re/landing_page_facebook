@@ -2,16 +2,13 @@
   padding-top: calc(139.47px + 118.59px);
   background: #ecf8ff;
 }
-
 .thanks-content {
   display: flex;
   justify-content: center;
 }
-
 .left-thanks {
   margin-right: 76.12px;
 }
-
 .right-thanks ul {
   display: flex;
   margin-bottom: 27.47px;
@@ -35,19 +32,16 @@
 .thanks-soc-link {
   display: block;
 }
-
 .thanks-soc-icon {
   display: block;
   width: 22px;
   height: 22px;
 }
-
 .right-thanks h1 {
   width: 548px;
   font-weight: 800;
   font-size: 75px;
   line-height: 63px;
-
   color: #111111;
   margin-bottom: 31.21px;
 }
@@ -55,7 +49,5 @@
   font-weight: 800;
   font-size: 45px;
   line-height: 50%;
-  /* or 83px */
-
   color: #466eb6;
 }
