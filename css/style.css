@@ -2162,5 +2162,6 @@ footer {
   }
   .left-form button {
     max-width: 100%;
+    font-size: 16px;
   }
 }

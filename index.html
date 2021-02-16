@@ -55,7 +55,7 @@
       <div class="header-content wrapper">
         <div class="logo_header">
           <a href="./index.html"
-            ><img src="/img/logo_header.png" alt="logo"
+            ><img src="/img/logo_header.png" alt="company logo"
           /></a>
         </div>
         <nav class="nav-bar">
@@ -99,9 +99,10 @@
             onsubmit="submitted=true;"
           >
             <input
-              type="phone"
+              type="tel"
               name="entry.823185248"
               placeholder="Viber, Telegram"
+              pattern="[0-9]+"
               required
             />
             <button type="submit">хочу работу</button>
@@ -111,7 +112,7 @@
         <img src="/img/top_320.png" alt="top" />
       </section>
 
-      <section class="position-class about">
+      <section class="position-class about" id="about">
         <div class="about-content">
           <img src="/img/about.png" alt="about" />
           <div class="right-about">
@@ -127,7 +128,7 @@
         </div>
       </section>
 
-      <section class="position-class todo">
+      <section class="position-class todo" id="duties">
         <div class="todo-content wrapper">
           <h1>Что Делает <span>Facebook Ads Specialist</span> Удаленно?</h1>
           <div class="todo-box">
@@ -146,7 +147,7 @@
           </div>
         </div>
 
-        <h1 class="new-h1">
+        <h1 class="new-h1" id="duties">
           Что Делает <span>Facebook Ads Specialist</span> Удаленно?
         </h1>
         <!-- Swiper -->
@@ -172,7 +173,7 @@
 
       <section class="position-class work">
         <div class="work-content wrapper">
-          <h1>Почему Стоит <span>Работать с Нами?</span></h1>
+          <h1 id="advantages">Почему Стоит <span>Работать с Нами?</span></h1>
           <p>
             RemotEmployees – это аутстаффинговая компания, которая предоставляет
             рабочие места в Украине ориентируясь на Европейский и Американский
@@ -186,10 +187,10 @@
             носителями языка.
           </p>
         </div>
-        <img src="/img/work_11.png" alt="" />
-        <img src="/img/work_22.png" alt="" />
-        <img src="/img/work_111.png" alt="" />
-        <img src="/img/work_222.png" alt="" />
+        <img src="/img/work_11.png" alt="work" />
+        <img src="/img/work_22.png" alt="work" />
+        <img src="/img/work_111.png" alt="work" />
+        <img src="/img/work_222.png" alt="work" />
       </section>
 
       <section class="position-class cards">
@@ -213,7 +214,7 @@
             <p>Карьерный рост</p>
           </div>
         </div>
-        <img src="/img/work_44.png" alt="" />
+        <img src="/img/work_44.png" alt="work" />
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -256,9 +257,9 @@
             Хватит раздумывать, начни работу в успешной украинской компании
             <span>RemotEmployees</span> уже сейчас!
           </p>
-          <a href="#">хочу работу</a>
+          <a href="#contacts">хочу работу</a>
         </div>
-        <img src="/img/work_33.png" alt="" />
+        <img src="/img/work_33.png" alt="work illustration" />
       </section>
 
       <section class="position-class who">
@@ -281,9 +282,9 @@
             </p>
           </div>
         </div>
-        <img src="/img/left_sect.png" alt="" />
+        <img src="/img/left_sect.png" alt="illustration" />
       </section>
-      <section class="position-class how">
+      <section class="position-class how" id="terms">
         <div class="how-content wrapper">
           <div class="left-how">
             <h1><span>Как получить работу</span> у нас ?</h1>
@@ -292,12 +293,14 @@
               заведение и пока не знаете где применить свои знания и навыки? Мы
               готовы помочь вам сделать правильный выбор!
             </p>
-            <a href="">Подробнее о нас</a>
+            <a href="https://remotemployees.com/">Подробнее о нас</a>
           </div>
           <div class="right-how">
             <ul>
               <li>
-                <p class="number"><img src="./img/how-1.png" alt="" /></p>
+                <p class="number">
+                  <img src="./img/how-1.png" alt="illustration" />
+                </p>
                 <p class="title">Запиши Видео</p>
                 <p class="descr">
                   Видео рассказ о себе вместо собеседования или звонка по
@@ -305,14 +308,18 @@
                 </p>
               </li>
               <li>
-                <p class="number"><img src="./img/how-2.png" alt="" /></p>
+                <p class="number">
+                  <img src="./img/how-2.png" alt="illustration" />
+                </p>
                 <p class="title">Заполни форму сотрудника</p>
                 <p class="descr">
                   Подпиши договор о сотрудничестве, заполни форму сотрудника.
                 </p>
               </li>
               <li>
-                <p class="number"><img src="./img/how-3.png" alt="" /></p>
+                <p class="number">
+                  <img src="./img/how-3.png" alt="illustration" />
+                </p>
                 <p class="title">Начни работу</p>
                 <p class="descr">
                   Вне зависимости от опыта в каждой новой компании нужно время
@@ -323,7 +330,7 @@
           </div>
         </div>
       </section>
-      <section class="position-class form">
+      <section class="position-class form" id="contacts">
         <div class="form-content wrapper">
           <form action="" class="left-form">
             <input
@@ -359,32 +366,59 @@
         <div class="left-footer">
           <div class="mobile-wrapper">
             <a href="./index.html" class="logo-footer"
-              ><img src="./img/logo-footer.svg" alt="" class="logo-footer-img"
+              ><img
+                src="./img/logo-footer.svg"
+                alt="company logo illustration"
+                class="logo-footer-img"
             /></a>
             <ul>
               <li>
-                <a href="" class="soc-link"
-                  ><img src="./img/soc-viber.svg" alt="" class="soc-icon"
+                <a href="viber://chat?number=380666146404" class="soc-link"
+                  ><img
+                    src="./img/soc-viber.svg"
+                    alt="viber illustration"
+                    class="soc-icon"
                 /></a>
               </li>
               <li>
-                <a href="" class="soc-link"
-                  ><img src="./img/soc-whatsapp.svg" alt="" class="soc-icon"
+                <a
+                  href="https://wa.me/380666146404"
+                  class="soc-link"
+                  target="_blank"
+                  ><img
+                    src="./img/soc-whatsapp.svg"
+                    alt="whatsapp illustration"
+                    class="soc-icon"
                 /></a>
               </li>
               <li>
-                <a href="" class="soc-link"
-                  ><img src="./img/soc-telegram.svg" alt="" class="soc-icon"
+                <a href="https://t.me/remotemployees" class="soc-link"
+                  ><img
+                    src="./img/soc-telegram.svg"
+                    alt="telegram illustration"
+                    class="soc-icon"
                 /></a>
               </li>
               <li>
-                <a href="" class="soc-link"
-                  ><img src="./img/soc-instagram.svg" alt="" class="soc-icon"
+                <a
+                  href="https://www.instagram.com/remotemployees/"
+                  class="soc-link"
+                  target="_blank"
+                  ><img
+                    src="./img/soc-instagram.svg"
+                    alt="instagram illustration"
+                    class="soc-icon"
                 /></a>
               </li>
               <li>
-                <a href="" class="soc-link"
-                  ><img src="./img/soc-facebook.svg" alt="" class="soc-icon"
+                <a
+                  href="https://fb.com/remotemployees"
+                  class="soc-link"
+                  target="_blank"
+                  ><img
+                    src="./img/soc-facebook.svg"
+                    alt="facebook illustration"
+                    class="soc-icon"
                 /></a>
               </li>
             </ul>
@@ -394,27 +428,36 @@
         <div class="right-footer">
           <ul>
             <li>
-              <img src="./img/right-viber.svg" alt="" class="icons" /><a
-                href=""
-                class="links"
+              <img
+                src="./img/right-viber.svg"
+                alt="viber illustration"
+                class="icons"
+              /><a href="viber://chat?number=380994160329" class="links"
                 >Валерия <br />
                 +380994160329</a
               >
             </li>
             <li>
-              <img src="./img/right-email.svg" alt="" class="icons" /><a
-                href=""
+              <img
+                src="./img/right-email.svg"
+                alt="email illustration"
+                class="icons"
+              /><a
+                href="mailto:hr@remotemployees.com"
+                target="_blank"
                 class="links"
                 >E-mail <br />
                 hr@remotemployees.com</a
               >
             </li>
             <li>
-              <img src="./img/right-home.svg" alt="" class="icons" /><a
-                href=""
-                class="links"
+              <img
+                src="./img/right-home.svg"
+                alt="home illustration"
+                class="icons"
+              /><span href="#" class="links" aria-disabled="true"
                 >Адрес <br />
-                ул. Рымарская 22, Харьков, Украина</a
+                ул. Рымарская 22, Харьков, Украина</span
               >
             </li>
           </ul>
