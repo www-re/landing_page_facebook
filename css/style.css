@@ -287,7 +287,7 @@ input:-webkit-autofill:active {
 .about {
   z-index: 1;
   height: 657.85px;
-  background: #ecf8ff;
+  background: rgba(236, 248, 255, 0.5);
 }
 .about-content {
   display: inherit;
@@ -583,7 +583,7 @@ input:-webkit-autofill:active {
   justify-content: center;
   align-items: center;
   padding-top: 194px;
-  background: #ecf8ff;
+  background: rgba(236, 248, 255, 0.5);
   background-image: url("../img/who-rect.png"), url("../img/who-circle.png");
   background-repeat: no-repeat;
   background-position: right 532px top 0, right 394px top 108px;
@@ -627,7 +627,7 @@ input:-webkit-autofill:active {
 .position-class.how {
   padding-top: 208.42px;
   padding-bottom: 165.1px;
-  background: #ecf8ff;
+  background: rgba(236, 248, 255, 0.5);
   background-image: url("../img/how-rect.png");
   background-position: left 279px top 123px;
   background-repeat: no-repeat;
