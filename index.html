@@ -34,7 +34,7 @@
       id="hidden_iframe"
       style="display: none"
       onload="
-    if (submitted) {window.location='thanks_page.html'}"
+    if (submitted) {window.location='thank-you.html'}"
     ></iframe>
     <!-- Бургер меню -->
     <div class="burger-menu">
@@ -84,9 +84,10 @@
             onsubmit="submitted=true;"
           >
             <input
-              type="phone"
+              type="tel"
               name="entry.823185248"
               placeholder="Номер телефона (Viber, Telegram)"
+              pattern="[0-9]+"
               required
             />
             <button type="submit">хочу работу</button>
@@ -325,9 +326,21 @@
       <section class="position-class form">
         <div class="form-content wrapper">
           <form action="" class="left-form">
-            <input type="text" placeholder="Имя" />
-            <input type="tel" placeholder="Телеграм / Вайбер" />
-            <input type="email" placeholder="Email" />
+            <input
+              type="text"
+              pattern="[а-яА-Я]+"
+              name=""
+              placeholder="Имя"
+              required
+            />
+            <input
+              type="tel"
+              pattern="[0-9]+"
+              name=""
+              placeholder="Телеграм / Вайбер"
+              required
+            />
+            <input type="email" name="" placeholder="Email" required />
             <button type="submit">хочу работу</button>
           </form>
           <div class="right-form">
@@ -341,6 +354,73 @@
         </div>
       </section>
     </main>
+    <footer class="position-class footer">
+      <div class="footer-content wrapper">
+        <div class="left-footer">
+          <div class="mobile-wrapper">
+            <a href="./thank-you.html" class="logo-footer"
+              ><img src="./img/logo-footer.svg" alt="" class="logo-footer-img"
+            /></a>
+            <ul>
+              <li>
+                <a href="" class="soc-link"
+                  ><img src="./img/soc-viber.svg" alt="" class="soc-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="soc-link"
+                  ><img src="./img/soc-whatsapp.svg" alt="" class="soc-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="soc-link"
+                  ><img src="./img/soc-telegram.svg" alt="" class="soc-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="soc-link"
+                  ><img src="./img/soc-instagram.svg" alt="" class="soc-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="soc-link"
+                  ><img src="./img/soc-facebook.svg" alt="" class="soc-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <p class="copy">2021 © Все права защищены</p>
+        </div>
+        <div class="right-footer">
+          <ul>
+            <li>
+              <img src="./img/right-viber.svg" alt="" class="icons" /><a
+                href=""
+                class="links"
+                >Валерия <br />
+                +380994160329</a
+              >
+            </li>
+            <li>
+              <img src="./img/right-email.svg" alt="" class="icons" /><a
+                href=""
+                class="links"
+                >E-mail <br />
+                hr@remotemployees.com</a
+              >
+            </li>
+            <li>
+              <img src="./img/right-home.svg" alt="" class="icons" /><a
+                href=""
+                class="links"
+                >Адрес <br />
+                ул. Рымарская 22, Харьков, Украина</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/swiper_todo.js" type="module"></script>

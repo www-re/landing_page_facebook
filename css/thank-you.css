@@ -1,0 +1,33 @@
+.position-class.thanks {
+  background: #ecf8ff;
+}
+
+.right-thanks ul {
+  display: flex;
+  margin-bottom: 27.47px;
+}
+.right-thanks ul li {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  list-style: none;
+  background: #466eb6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-thanks ul li:hover {
+  background: #34e490;
+}
+.right-thanks ul li:not(:last-child) {
+  margin-right: 22.84px;
+}
+.thanks-soc-link {
+  display: block;
+}
+
+.thanks-soc-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
