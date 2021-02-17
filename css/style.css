@@ -529,6 +529,7 @@ input:-webkit-autofill:active {
 
 .want {
   background: rgba(236, 248, 255, 1);
+  padding-bottom: 40px;
 }
 .want img {
   top: 52px;
@@ -1154,7 +1155,6 @@ footer {
   }
 
   /* Todo */
-
   .todo-content h1 {
     font-weight: 700;
   }

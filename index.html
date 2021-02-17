@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="./img/cropped-favicon-32x32.png" />
   </head>
 
   <body>
@@ -34,7 +35,7 @@
       id="hidden_iframe"
       style="display: none"
       onload="
-    if (submitted) {window.location='thank-you.html'}"
+    if (submitted) {window.location='./thank-you.html'}"
     ></iframe>
     <!-- Бургер меню -->
     <div class="burger-menu">
@@ -78,14 +79,15 @@
             на работу<br />в удаленном формате.
           </p>
           <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWDyRFwcUWBqlzBgSR4-9y4Fxyo1_ptlpFpiH3hwwSduuPxA/formResponse"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSemKabPnnbLedeX4V3pWyHbMQ7Dhf7gNnydQ6c5oQgr-5LX7w/formResponse"
+            method="POST"
             class="top-form"
             target="hidden_iframe"
             onsubmit="submitted=true;"
           >
             <input
               type="tel"
-              name="entry.823185248"
+              name="entry.2126491933"
               placeholder="Номер телефона (Viber, Telegram)"
               pattern="[0-9]+"
               required
@@ -93,14 +95,15 @@
             <button type="submit">хочу работу</button>
           </form>
           <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWDyRFwcUWBqlzBgSR4-9y4Fxyo1_ptlpFpiH3hwwSduuPxA/formResponse"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSemKabPnnbLedeX4V3pWyHbMQ7Dhf7gNnydQ6c5oQgr-5LX7w/formResponse"
+            method="POST"
             class="top-form_320"
             target="hidden_iframe"
             onsubmit="submitted=true;"
           >
             <input
               type="tel"
-              name="entry.823185248"
+              name="entry.2126491933"
               placeholder="Viber, Telegram"
               pattern="[0-9]+"
               required
@@ -332,22 +335,33 @@
       </section>
       <section class="position-class form" id="contacts">
         <div class="form-content wrapper">
-          <form action="" class="left-form">
+          <form
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSemKabPnnbLedeX4V3pWyHbMQ7Dhf7gNnydQ6c5oQgr-5LX7w/formResponse"
+            method="POST"
+            class="left-form"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+          >
             <input
               type="text"
               pattern="[а-яА-Я]+"
-              name=""
+              name="entry.417999638"
               placeholder="Имя"
               required
             />
             <input
               type="tel"
               pattern="[0-9]+"
-              name=""
+              name="entry.2126491933"
               placeholder="Телеграм / Вайбер"
               required
             />
-            <input type="email" name="" placeholder="Email" required />
+            <input
+              type="email"
+              name="entry.1043111229"
+              placeholder="Email"
+              required
+            />
             <button type="submit">хочу работу</button>
           </form>
           <div class="right-form">
